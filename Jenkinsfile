@@ -73,8 +73,8 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'hiteshmankar', variable: 'hiteshmankar')]) {
-                   sh 'docker login -u youngminds73 -p ${hiteshmankar}'}
-                   sh 'docker push youngminds73/ekart:latest'
+                   sh 'docker login -u hiteshmankar -p ${Hitesh@12345}'}
+                   sh 'docker push hiteshmankar/ekart:latest'
                 }
             }
         }
