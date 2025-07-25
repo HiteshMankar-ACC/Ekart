@@ -72,7 +72,7 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{
-                   withCredentials([string(credentialsId: 'hiteshmankar', variable: 'hiteshmankar')]) {
+                   withCredentials([string(credentialsId: 'hiteshmankar', variable: 'Hitesh@12345')]) {
                    sh 'docker login -u hiteshmankar -p ${Hitesh@12345}'}
                    sh 'docker push hiteshmankar/ekart:latest'
                 }
